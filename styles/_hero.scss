@@ -1,0 +1,121 @@
+.hero-wrapper{
+   width: 100%;
+   max-width: 90rem;
+   
+   margin: auto;
+   background-color: $very-light-gray;
+   background-image: url(../images/bg-intro-desktop.svg);
+   background-repeat: no-repeat;
+   object-fit: cover;
+   background-position: 38rem -16rem;
+   position: relative;
+   overflow: hidden;
+}
+
+.hero{
+   width: 100%;
+   max-width: 68.75rem;
+   margin: auto;
+   height: 100vh;
+   max-height: 41rem;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+ 
+}
+
+.hero__copy{
+
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ max-width: 27rem;
+ gap: 2.25rem;
+
+ h1{
+    font-size: 3.375rem;
+    max-width: 15ch;
+    color: $dark-blue;
+    font-weight: $regular;
+ }
+
+ p{
+     color: $grayish-blue;
+     
+ }
+}
+
+.hero__btn{
+   width: 10.25rem;
+   height: 2.75rem;
+   border-radius: 1.375rem;
+   background-image: linear-gradient(to right, $lime-green 0%, $bright-cyan 75%);
+   border: none;
+   color: $white;
+   cursor: pointer;
+   background-size: 150% auto;
+   transition: background-position 1s cubic-bezier(.25,.8,.25,1);
+  
+   
+   &:hover{
+       background-position: right center;
+       
+   }
+}
+
+
+.hero__img{
+   position: absolute;
+   right: -8rem;
+   top: -120px;
+   object-fit: cover;
+   max-width: 100%;
+   
+}
+
+
+@media screen and (max-width: 56rem){
+
+   .hero-wrapper{
+      height: 100vh;
+      max-height: 700px;
+      background-image: url(../images/bg-intro-mobile.svg);
+      background-repeat: no-repeat;
+      background-position: center -40px;
+      object-fit: cover;
+   }
+
+   .hero {
+      
+      max-width: 90%;
+      margin: auto;
+      
+   }
+   .hero__img{
+      position: absolute;
+      left: 0;
+      top: -160px;
+   }
+
+   .hero__copy{
+      margin-top: 27rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 1.5rem;
+
+      h1{
+         font-size: 2.25rem;
+      
+      }
+
+      p{
+         font-size: 0.875rem;
+      }
+   }
+
+   .hero__btn{
+      margin-bottom: 5rem;
+   }
+}
+

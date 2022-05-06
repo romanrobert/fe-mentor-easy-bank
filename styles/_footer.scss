@@ -1,0 +1,114 @@
+.footer-wrapper{
+    background-color: $dark-blue;
+    max-width: 90rem;
+    margin: auto;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 375px;
+    margin: auto;
+    padding-top: 2rem;
+    height: fit-content;
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer-social{
+    width: 10.625rem;
+    display: flex;
+    justify-content: space-between;
+    path:hover{
+        fill: $lime-green;
+    }
+    
+}
+
+.links-group{
+    font-size: 0.875rem;
+    text-align: center;
+    
+    a{
+        color: $grayish-blue;
+        &:hover{
+            color: $lime-green;
+        }
+        
+    }
+
+    li{
+        padding: 0.5rem 0rem;
+    }
+
+
+    
+}
+
+.btn-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        font-size: 13px;
+        color: $grayish-blue;
+        padding-bottom: 2.5rem;
+    }
+    
+}
+
+.footer-btn{
+    width: 10.25rem;
+    height: 2.75rem;
+    border-radius: 1.375rem;
+    background-image: linear-gradient(to right, $lime-green 0%, $bright-cyan 75%);
+    border: none;
+    color: $white;
+    cursor: pointer;
+    background-size: 150% auto;
+    transition: background-position 1s cubic-bezier(.25,.8,.25,1);
+   margin: 2rem 0rem;
+    
+    &:hover{
+        background-position: right center;
+        
+    }
+
+}
+
+
+@media screen and (min-width: 50rem){
+    .footer{
+        width: 100%;
+        max-width: 68.75rem;
+        
+        margin: auto;
+        height: auto;
+        max-height: 11.875rem;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    .links-group{
+        display: flex;
+        text-align: start;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20rem;
+        margin-left: 5rem;
+        margin-bottom: 1rem;
+        gap: 120px;
+    }
+}
+
